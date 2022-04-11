@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+.cards-container {
+  text-align: center;
+  font-size: 24px;
+}
+.card-wrapper {
+  --img-size: 100px;
+  --main-bg-color: rgb(35, 35, 181);
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: calc(var(--img-size) * 2);
+  width: 100%;
+  max-width: calc(var(--img-size) * 3);
+  border: 1px solid var(--main-bg-color);
+  font-size: 0.8em;
+}
+.bg-header {
+  height: calc(var(--img-size) * 1.2);
+  background-color: var(--main-bg-color);
+}
+.card-content {
+  padding: 0 20px;
+}
+.photo-profile {
+  width: var(--img-size);
+  height: var(--img-size);
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  margin-top: calc(var(--img-size) * -0.5);
+  object-fit: cover;
+  object-position: top center;
+  background-color: #ffffff;
+}
+.btn-container {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 15px 0;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.follow {
+  background-color: green;
+}
+.card-footer {
+  background-color: var(--main-bg-color);
+  padding: 10px;
+}
+.link-social {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+.card-item-social {
+  display: inline-block;
+}
+.icon-fb {
+  background-image: url(./../icons/facebook.png);
+}
+.icon-google {
+  background-image: url(./../icons/google-plus.png);
+}
+.icon-twitter {
+  background-image: url(./../icons/twitter.png);
+}
